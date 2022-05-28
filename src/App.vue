@@ -8,6 +8,7 @@
 		>
 			<!-- Change color from "red" to "green", and save file, HMR doesn't apply, requires page refresh. Generally updates within v-for is not getting HMR applied correctly -->
 			<v-btn class="ml-3" color="red" @click="addToCart(item)">v-btn</v-btn>
+
 			<!-- Change color from "red" to "green", and save file, HMR applies correctly. Only difference from the above is the click handler doesn't have a parameter, no idea why it works here, but not above -->
 			<v-btn class="ml-3" color="red" @click="addToCart()">v-btn</v-btn>
 		</div>
