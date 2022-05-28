@@ -12,6 +12,16 @@
 			<!-- Change color from "red" to "green", and save file, HMR applies correctly. Only difference from the above is the click handler doesn't have a parameter, no idea why it works here, but not above -->
 			<v-btn class="ml-3" color="red" @click="addToCart()">v-btn</v-btn>
 		</div>
+
+		<!-- Change step from '5' to '10', and save file, HMR doesn't apply, requires page refresh. This is a HMR issue when updating an element that's not really within a v-for -->
+		<v-slider
+			v-model="slider3"
+			thumb-color="purple"
+			label="thumb-color"
+			step="5"
+			show-ticks="always"
+			tick-size="4"
+		></v-slider>
 	</v-app>
 </template>
 
